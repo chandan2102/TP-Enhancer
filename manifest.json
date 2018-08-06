@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "TP Enhancer",
+    "description": "Enhance Tutorialspoint View",
+    "version": "1.0.0",
+    "icons": {"128": "icon_128.png"},
+    "permissions": ["tabs", "*://*.tutorialspoint.com/*"],
+    "content_scripts": [
+        {
+          "matches": ["*://*.tutorialspoint.com/*"],
+          "js": ["popup.js"]
+        }
+    ]
+}
